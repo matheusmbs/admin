@@ -19,7 +19,7 @@ import { ListarProjetosComponent } from './starter/starter-content/projetos/list
 import { CadastrarProjetosComponent } from './starter/starter-content/projetos/cadastrar-projetos/cadastrar-projetos.component';
 import { CadastrarAnalistaComponent } from './starter/starter-content/analista/cadastrar-analista/cadastrar-analista.component';
 import { ListarAnalistaComponent } from './starter/starter-content/analista/listar-analista/listar-analista.component';
-
+import { DemandasComponent } from './starter/starter-content/projetos/demandas/demandas.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +31,8 @@ import { ListarAnalistaComponent } from './starter/starter-content/analista/list
     ListarProjetosComponent,
     CadastrarProjetosComponent,
     CadastrarAnalistaComponent,
-    ListarAnalistaComponent
+    ListarAnalistaComponent,
+    DemandasComponent
     ],
   imports: [
     BrowserModule,

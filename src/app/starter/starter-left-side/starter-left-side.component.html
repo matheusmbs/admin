@@ -19,15 +19,15 @@
     <!-- Sidebar Menu -->
     <ul class="sidebar-menu">
       <li class="header">HEADER</li>
-      <li class="treeview">
+      <li class="treeview active">
         <a   href="#"><i class="fa fa-clone"></i> <span>PROJETOS</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a routerLink="projetos/listar-projetos" >LISTAR PROJETOS</a></li>
-          <li><a routerLink="projetos/cadastrar-projetos" >CADASTRAR PROJETOS</a></li>
+          <li><a [routerLink]="['/projeto/listar-projetos']" ><i class="fa fa-circle-o"></i> LISTAR PROJETOS</a></li>
+          <li><a [routerLink]="['/projeto/cadastrar-projetos']" ><i class="fa fa-circle-o"></i> CADASTRAR PROJETOS</a></li>
         </ul>
       </li>
       <li class="treeview">
@@ -37,8 +37,8 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a routerLink="analistas/listar-analistas" >LISTAR ANALISTAS</a></li>
-          <li><a routerLink="analistas/cadastrar-analistas">CADASTRAR ANALISTAS</a></li>
+          <li><a [routerLink]="['/analistas/listar-analistas']" ><i class="fa fa-circle-o"></i> LISTAR ANALISTAS</a></li>
+          <li><a [routerLink]="['/analistas/cadastrar-analistas']" ><i class="fa fa-circle-o"></i> CADASTRAR ANALISTAS</a></li>
         </ul>
       </li>
     </ul>

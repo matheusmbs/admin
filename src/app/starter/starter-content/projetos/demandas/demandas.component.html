@@ -1,0 +1,122 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-12">
+        <h3 class="box-title"><b>Demandas</b></h3>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-12 text-right">
+        <button  style="margin-top: 15px; width: auto; float: right;" type="a" 
+          data-toggle="modal" data-target="#modal-default" 
+            class="btn btn-block btn-primary btn-sm">Cadastrar Demanda</button>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+      <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="form-group">
+              <label style="padding: 6px;" for="inputEmail3" class="col-sm-1 control-label">Buscar: </label>
+
+            <div class="col-sm-6">
+              <input class="form-control" id="inputEmail3" placeholder="Digite o nome da demanda" type="text">
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="box box-primary collapsed-box">
+          <div data-widget="collapse"  class="box-header with-border">
+            <i class="fa fa-plus" ></i>
+            <h3 class="box-title"><b>Demanda 1</b></h3>
+
+          </div>
+          <!-- /.box-header -->
+          <div id="info" class="box-body">
+             
+          </div>
+          <!-- /.box-body -->
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="box box-primary collapsed-box">
+          <div data-widget="collapse" class="box-header with-border">
+            <i class="fa fa-plus" ></i>
+            <h3 class="box-title"><b>Demanda 2</b></h3>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body">
+              
+          </div>
+          <!-- /.box-body -->
+        </div>
+      </div>
+  </div>
+
+
+  <div class="modal fade" id="modal-default" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span></button>
+          <h4 class="modal-title">Cadastrar Demanda</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label>Nome da Demanda</label>
+                      <input class="form-control" placeholder="Digite o nome" type="text">
+                  </div>
+              </div>
+
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label>Selecione o período da demanda</label>
+      
+                      <div class="input-group">
+                        <div class="input-group-addon">
+                          <i class="fa fa-clock-o"></i>
+                        </div>
+                        <input class="form-control pull-right" id="reservationtime" type="text">
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label>Selecione o Analista</label>
+      
+                      <div class="form-group">
+                          <select class="form-control">
+                            <option>Matheus</option>
+                            <option>Leila</option>
+                            <option>Leonardo</option>
+                            <option>Patrick</option>
+                            <option>Alan</option>
+                            <option>Jonathan</option>
+                          </select>
+                      </div>
+                      <!-- /.input group -->
+                    </div>
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Cadastrar</button>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+</section>
