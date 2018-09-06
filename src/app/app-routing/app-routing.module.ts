@@ -10,6 +10,7 @@ import { ListarAnalistaComponent } from '../starter/starter-content/analista/lis
 import { CadastrarProjetosComponent } from '../starter/starter-content/projetos/cadastrar-projetos/cadastrar-projetos.component';
 import { CadastrarAnalistaComponent } from '../starter/starter-content/analista/cadastrar-analista/cadastrar-analista.component';
 import { DemandasComponent } from '../starter/starter-content/projetos/demandas/demandas.component';
+import { AnalistaPerfilComponent } from '../starter/starter-content/analista/analista-perfil/analista-perfil.component';
 
 @NgModule({
   imports: [
@@ -24,7 +25,8 @@ import { DemandasComponent } from '../starter/starter-content/projetos/demandas/
       { path: 'analistas', component: StarterComponent, children:[
         { path: '', redirectTo: 'listar-analistas', pathMatch: 'full' },
         {path: 'listar-analistas', component: ListarAnalistaComponent},
-        {path: 'cadastrar-analistas', component: CadastrarAnalistaComponent}
+        {path: 'cadastrar-analistas', component: CadastrarAnalistaComponent},
+        {path: 'perfil', component: AnalistaPerfilComponent}
       ]}
     ])
   ],

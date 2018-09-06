@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-declare var $:any;
+
 @Component({
   selector: 'app-starter',
   templateUrl: './starter.component.html',
@@ -16,7 +16,7 @@ export class StarterComponent implements OnInit, OnDestroy {
     // add the the body classes
     this.body.classList.add('skin-blue');
     this.body.classList.add('sidebar-mini');
-    $('.table').DataTable();
+
   }
 
    ngOnDestroy() {

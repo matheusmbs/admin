@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-
+declare var $:any;
 
 @Component({
   selector: 'app-listar-projetos',
@@ -14,7 +14,7 @@ export class ListarProjetosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      
+    $('.table').DataTable();
   }
 
 }

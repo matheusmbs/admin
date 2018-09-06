@@ -49,6 +49,7 @@
         "assets/js/adminLTEOptions.js",
         "assets/js/scripts.js",
         "assets/DataTables/datatables.min.js"
+        
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
