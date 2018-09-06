@@ -11,16 +11,20 @@ import { CadastrarProjetosComponent } from '../starter/starter-content/projetos/
 import { CadastrarAnalistaComponent } from '../starter/starter-content/analista/cadastrar-analista/cadastrar-analista.component';
 import { DemandasComponent } from '../starter/starter-content/projetos/demandas/demandas.component';
 import { AnalistaPerfilComponent } from '../starter/starter-content/analista/analista-perfil/analista-perfil.component';
+import { DemandaUnicaComponent } from '../starter/starter-content/projetos/demanda-unica/demanda-unica.component';
+import { LoginComponent } from '../starter/login/login.component';
 
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', redirectTo: 'projeto', pathMatch: 'full' },
+      { path: '', redirectTo: 'login', pathMatch: 'full' },
+      { path: 'login', component: LoginComponent},
       { path: 'projeto', component: StarterComponent, children:[
         { path: '', redirectTo: 'listar-projetos', pathMatch: 'full' },
         {path: 'listar-projetos', component: ListarProjetosComponent},
         {path: 'cadastrar-projetos', component: CadastrarProjetosComponent},
-        {path: 'demandas', component:DemandasComponent}
+        {path: 'demandas', component:DemandasComponent},
+        {path: 'demanda-unica', component:DemandaUnicaComponent}
       ]},
       { path: 'analistas', component: StarterComponent, children:[
         { path: '', redirectTo: 'listar-analistas', pathMatch: 'full' },
